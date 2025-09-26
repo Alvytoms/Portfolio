@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alvy Toms – Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/d307587f31.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- HEADER / HERO -->
+    <header id="header" role="banner">
+        <div class="container">
+            <nav aria-label="Primary">
+                <img src="images/logo.png" class="logo" alt="Alvy Toms." />
+
+                <!-- Mobile menu button -->
+                <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="sr-only">Menu</span>
+                </button>
+
+                <!-- Add id for JS/ARIA -->
+                <ul id="primary-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+
+            <div class="header-text">
+                <p>Software Developer | Network Engineer</p>
+                <h1>Software Student looking for diverse opportunities</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about" aria-label="About Me">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/photo.jpg" alt="Alvy outdoors portrait" />
+                </div>
+
+                <div class="about-col-2">
+                    <h2 class="sub-title">About Me</h2>
+                    <p>
+                        Motivated Computer Programming student at Sheridan College with hands-on experience in software
+                        development, web technologies, and databases through academic projects. Skilled in C#, Java, Python, HTML,
+                        CSS, JavaScript, and SQL, with a strong foundation in object-oriented programming and problem-solving.
+                        Seeking an IT co-op opportunity to apply technical skills, contribute to real-world projects, and continue
+                        learning in a professional environment.
+                    </p>
+
+                    <div class="tab-titles" role="tablist" aria-label="Profile sections">
+                        <p class="tab-links active-link" role="tab" tabindex="0" aria-selected="true" onclick="opentab('Skills', this)">Skills</p>
+                        <p class="tab-links" role="tab" tabindex="0" aria-selected="false" onclick="opentab('Education', this)">Education</p>
+                        <p class="tab-links" role="tab" tabindex="0" aria-selected="false" onclick="opentab('Experience', this)">Experience</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="Skills" role="tabpanel">
+                        <ul>
+                            <li><span>Programming Languages</span><br />Java · C# · Python · JavaScript · SQL</li>
+                            <li><span>Web Development</span><br />HTML5 · CSS3 · Thymeleaf · Responsive Design</li>
+                            <li><span>Frameworks & Tools</span><br />Spring Boot · .NET · Bootstrap · Git/GitHub · Eclipse · VS Code</li>
+                            <li><span>Databases</span><br />MySQL · H2 · SQLite</li>
+                            <li><span>Software Skills</span><br />MS Project · JIRA · Excel (advanced) · PowerPoint · Word</li>
+                            <li><span>Soft Skills</span><br />Project Coordination · Problem-Solving · Communication · Team Collaboration</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="tab-contents" id="Education" role="tabpanel">
+                        <ul>
+                            <li>
+                                <span>Computer Systems Technology – Software Development & Network Engineering (SDNE)</span><br />
+                                Sheridan College · 3-Year Advanced Diploma<br />
+
+                                Expected Completion: Sep 2026
+                            </li>
+                            <li>
+                                <span>Additional Learning</span><br />
+                                Self-study in Spring Boot · Git/GitHub · Project Management Tools
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="tab-contents" id="Experience" role="tabpanel">
+                        <ul>
+                            <li>
+                                <span>Animation Shadow Shooter</span><br />
+                                Built a 2D bubble shooter–style mini-game in C# with OOP logic, animations, and UI interactions.
+                            </li>
+                            <li>
+                                <span>Spring Boot Web Application</span><br />
+                                Developed a secure web app with login, session handling, and database integration using Java, Spring Boot, and Thymeleaf.
+                            </li>
+                            <li>
+                                <span>Interactive To-Do List</span><br />
+                                Created a responsive web-based to-do list app using HTML, CSS, and JavaScript with add/edit/delete functionality and local storage.
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" aria-label="Projects">
+        <div class="container">
+            <h2 class="sub-title">Projects</h2>
+
+            <div class="services-list">
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>Animation Shadow Shooter</h3>
+                        <ul class="project-tags"><li>C#</li><li>.NET</li><li>VS Code</li></ul>
+                    </div>
+                    <p class="project-summary">A 2D bubble shooter–style mini-game with simple animations and UI.</p>
+                    <ul class="project-points">
+                        <li>Player-controlled bubble spawning and an interactive “Shoot” button.</li>
+                        <li>Basic animation, OOP game logic, and UI elements for smooth interaction.</li>
+                    </ul>
+                    <div class="project-actions">
+                        <a class="btn" href="#" aria-label="View Animation Shadow Shooter code">View code</a>
+                        <a class="btn btn--ghost" href="#" aria-label="Play Animation Shadow Shooter">Live demo</a>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>Spring Boot Web Application</h3>
+                        <ul class="project-tags"><li>Java</li><li>Spring Boot</li><li>Thymeleaf</li></ul>
+                    </div>
+                    <p class="project-summary">Interactive website with login, session handling, and DB integration.</p>
+                    <ul class="project-points">
+                        <li>MVC architecture with secure auth and CRUD flows.</li>
+                        <li>Templating with Thymeleaf; JDBC/H2 or MySQL backend.</li>
+                    </ul>
+                    <div class="project-actions">
+                        <a class="btn" href="#">View code</a>
+                        <a class="btn btn--ghost" href="#">Live demo</a>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>Interactive To-Do List</h3>
+                        <ul class="project-tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+                    </div>
+                    <p class="project-summary">A clean to-do app with add/edit/remove and local storage.</p>
+                    <ul class="project-points">
+                        <li>DOM manipulation + event handling for instant feedback.</li>
+                        <li>Responsive layout and keyboard-friendly controls.</li>
+                    </ul>
+                    <div class="project-actions">
+                        <a class="btn" href="#">View code</a>
+                        <a class="btn btn--ghost" href="#">Live demo</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- RESUME -->
+    <section id="resume" aria-label="Resume">
+        <div class="container">
+            <h2 class="sub-title">Resume</h2>
+            <p class="resume-intro">
+                You can view and download my full resume to learn more about my background, education, and technical experience.
+            </p>
+            <div class="resume-actions">
+                <a class="btn" href="files/Alvy_Toms_Resume.pdf" target="_blank" rel="noopener">View PDF</a>
+                <a class="btn btn--ghost" href="files/Alvy_Toms_Resume.pdf" download>Download</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- CONTACT -->
+    <section id="contact" aria-label="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h2 class="sub-title">Contact Me</h2>
+                    <p><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:alvytoms123@gmail.com">alvytoms123@gmail.com</a></p>
+                    <p><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+14375991744">+1 (437) 599-1744</a></p>
+                    <div class="social-icons" aria-label="Social links">
+                        <a href="https://www.linkedin.com/in/alvy-toms/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/txm_yy_?igsh=MXhrMGtkYTVkZzM2bQ%3D%3D&utm_source=qr " aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-right">
+                    <form id="contact-form" aria-label="Contact form">
+                        <!-- Honeypot to reduce bots -->
+                        <input type="text" name="company" id="company" style="display:none" tabindex="-1" autocomplete="off" />
+
+                        <input type="text" name="Name" placeholder="Your Name" required />
+                        <input type="email" name="email" placeholder="Your Email" required />
+                        <textarea name="message" placeholder="Your Message" rows="6"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="site-footer" role="contentinfo">
+        <p>&copy; 2025 Alvy Toms</p>
+    </footer>
+
+    <script>
+        // Tabs (safer: no global 'event')
+        function opentab(tabname, el) {
+            const tablinks = document.getElementsByClassName("tab-links");
+            const tabcontents = document.getElementsByClassName("tab-contents");
+            for (const t of tablinks) { t.classList.remove("active-link"); t.setAttribute('aria-selected', 'false'); }
+            for (const c of tabcontents) { c.classList.remove("active-tab"); }
+            el.classList.add("active-link"); el.setAttribute('aria-selected', 'true');
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwYiOXRWk7-vjSyEvNdLm1CtpkGj_EmsrUWwPmvBPSBPYxebMYjcp4LKey47HFM8IPU/exec';
+
+        const form = document.getElementById('contact-form');
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const fd = new FormData(form);
+
+            const payload = {
+                name: fd.get('Name'),
+                email: fd.get('email'),
+                message: fd.get('message'),
+                page: location.href,
+                userAgent: navigator.userAgent,
+                // honeypot field (must be empty):
+                honeypot: document.getElementById('company').value || ''
+            };
+
+            // Send to Apps Script. `no-cors` avoids CORS errors on static hosts.
+            try {
+                await fetch(APPS_SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                form.reset();
+                alert('Thanks! Your message was sent.');
+            } catch (err) {
+                console.error(err);
+                alert('Oops—something went wrong. Please email me directly.');
+            }
+        });
+    </script>
+    <script>
+        // Mobile nav toggle
+        const navBtn = document.querySelector('.nav-toggle');
+        const menu = document.getElementById('primary-menu');
+        if (navBtn && menu) {
+            navBtn.addEventListener('click', () => {
+                const open = navBtn.getAttribute('aria-expanded') === 'true';
+                navBtn.setAttribute('aria-expanded', String(!open));
+            });
+            // Close menu when a link is clicked
+            menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+                navBtn.setAttribute('aria-expanded', 'false');
+            }));
+        }
+    </script>
+
+
+</body>
+</html>
